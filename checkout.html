@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+  <main>
+    <section class="faded-background">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: PKR<span id="cart-total">0</span></p>
+    <button id="clear-cart">Clear Cart</button>
+    <button id="place-order">Place Order</button>
+    </section>
+  </main>
+  <script src="cart.js"></script>
+  <script>
+    document.getElementById('clear-cart').addEventListener('click', () => {
+      localStorage.removeItem('cart');
+      cart = [];
+      updateCartSummary();
+    });
+
+    document.getElementById('place-order').addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert('Your cart is empty!');
+        return;
+      }
+      alert('Thank you for your order!');
+      localStorage.removeItem('cart');
+      cart = [];
+      updateCartSummary();
+    });
+  </script>
+  <script src="checkout.js"></script>
+</body>
+</html>

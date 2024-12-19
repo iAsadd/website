@@ -1,0 +1,214 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+
+  header {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    position: relative; /* Ensure content is above the background */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional white overlay */
+    max-width: 100vh;
+    border-radius: 8px;
+  }
+  
+  .menu-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .menu-item h2 {
+    margin: 0 0 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  #cart-summary {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  #cart-items button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  #cart-items button:hover {
+    background-color: #c0392b;
+  }
+
+  #cart-total {
+    margin-left: 5px;
+  }
+  .menu-image {
+    width: 150px; 
+    height: 120px; 
+    border-radius: 20px; 
+    margin-bottom: 10px; 
+  }
+      
+  .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .imgg{
+    width: 100%;
+    height: 150px;
+    background-color: #dad2d1;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .background-image {
+    position: center;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 0; 
+    object-fit: cover; 
+  }
+
+  .faded-background {
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("./img/backgroundd.jpg");
+}
+/*
+.faded-background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the section without distortion 
+    z-index: 0; /* Places the image behind the content 
+    filter: brightness(40%); /* Applies the fading effect to the image 
+}
+
+.faded-background .content {
+    position: absolute; /* Keeps content on top of the image 
+    z-index: 1; /* Ensures the content is layered above the image 
+    color: white; /* 
+} */
+
+.faded-background h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.faded-background p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.faded-background button {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faded-background button:hover {
+    background-color: #d4af37; /* Slightly darker gold for hover effect */
+}
+
+  header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #18191a;
+  }
+  
+  /* Cart actions */
+  .cart-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
